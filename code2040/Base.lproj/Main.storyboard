@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="code2040" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,7 +17,71 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRq-IV-4Dj">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bJK-ml-VIt"/>
+                                    <constraint firstAttribute="width" constant="55" id="upu-WQ-YKL"/>
+                                </constraints>
+                                <state key="normal" title="Reverse"/>
+                                <connections>
+                                    <action selector="reverseString:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n4d-R8-6Kp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qse-AZ-y0V">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="SEI-WL-G6g"/>
+                                    <constraint firstAttribute="width" constant="84" id="gux-WG-OKT"/>
+                                </constraints>
+                                <state key="normal" title="Find needle "/>
+                                <connections>
+                                    <action selector="findNeedle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cLl-6G-Kne"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hun-Jq-kf7">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="0ca-1Z-NAn"/>
+                                    <constraint firstAttribute="height" constant="30" id="FXc-Jl-jmB"/>
+                                </constraints>
+                                <state key="normal" title="Prefix"/>
+                                <connections>
+                                    <action selector="prefix:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kqo-pM-jqx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGF-BT-rBb">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="89" id="9b6-Dp-SRi"/>
+                                    <constraint firstAttribute="height" constant="30" id="wDI-dx-FTd"/>
+                                </constraints>
+                                <state key="normal" title="Dating Game"/>
+                                <connections>
+                                    <action selector="datingGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J3a-YX-0Pe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7K-yc-wn4">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="83" id="YAT-Qp-Jsk"/>
+                                    <constraint firstAttribute="height" constant="30" id="a04-eN-jSl"/>
+                                </constraints>
+                                <state key="normal" title="Registration"/>
+                                <connections>
+                                    <action selector="Registration:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SrS-1U-Ne6"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Hun-Jq-kf7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Lo-uQ-nAl"/>
+                            <constraint firstItem="Hun-Jq-kf7" firstAttribute="top" secondItem="qse-AZ-y0V" secondAttribute="bottom" constant="40" id="Dp2-hZ-JlG"/>
+                            <constraint firstItem="sGF-BT-rBb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ppx-2p-ea7"/>
+                            <constraint firstItem="eRq-IV-4Dj" firstAttribute="top" secondItem="n7K-yc-wn4" secondAttribute="bottom" constant="27" id="bfB-n5-xmN"/>
+                            <constraint firstItem="sGF-BT-rBb" firstAttribute="top" secondItem="Hun-Jq-kf7" secondAttribute="bottom" constant="40" id="dhZ-tW-SaO"/>
+                            <constraint firstItem="n7K-yc-wn4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mcJ-Wq-WOb"/>
+                            <constraint firstItem="n7K-yc-wn4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="38" id="nKH-y5-9K1"/>
+                            <constraint firstItem="eRq-IV-4Dj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sXh-rG-NVb"/>
+                            <constraint firstItem="qse-AZ-y0V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tOJ-Sb-lRO"/>
+                            <constraint firstItem="qse-AZ-y0V" firstAttribute="top" secondItem="eRq-IV-4Dj" secondAttribute="bottom" constant="42" id="wEV-oB-6CJ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

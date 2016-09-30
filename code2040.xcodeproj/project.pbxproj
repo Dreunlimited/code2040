@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07FB66E429D64F1E1ABA8A0C /* Pods_code2040.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B851EA1DCEB2B233D28E5A5C /* Pods_code2040.framework */; };
 		A6ECA09F1D9AC71100D692DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6ECA09E1D9AC71100D692DD /* AppDelegate.swift */; };
 		A6ECA0A11D9AC71100D692DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6ECA0A01D9AC71100D692DD /* ViewController.swift */; };
 		A6ECA0A41D9AC71100D692DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6ECA0A21D9AC71100D692DD /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		49B664F209ED1FBF93F17183 /* Pods-code2040.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-code2040.debug.xcconfig"; path = "Pods/Target Support Files/Pods-code2040/Pods-code2040.debug.xcconfig"; sourceTree = "<group>"; };
 		A6ECA09B1D9AC71100D692DD /* code2040.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = code2040.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6ECA09E1D9AC71100D692DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6ECA0A01D9AC71100D692DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		A6ECA0BA1D9AC71100D692DD /* code2040UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = code2040UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6ECA0BE1D9AC71100D692DD /* code2040UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = code2040UITests.swift; sourceTree = "<group>"; };
 		A6ECA0C01D9AC71100D692DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B851EA1DCEB2B233D28E5A5C /* Pods_code2040.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_code2040.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7C9C1DBE83455DE11A79FE0 /* Pods-code2040.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-code2040.release.xcconfig"; path = "Pods/Target Support Files/Pods-code2040/Pods-code2040.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07FB66E429D64F1E1ABA8A0C /* Pods_code2040.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25488F816A1135848F9D3CA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B851EA1DCEB2B233D28E5A5C /* Pods_code2040.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4EA689A72BB8D72DEC374F46 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				49B664F209ED1FBF93F17183 /* Pods-code2040.debug.xcconfig */,
+				F7C9C1DBE83455DE11A79FE0 /* Pods-code2040.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A6ECA0921D9AC71100D692DD = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +103,8 @@
 				A6ECA0B21D9AC71100D692DD /* code2040Tests */,
 				A6ECA0BD1D9AC71100D692DD /* code2040UITests */,
 				A6ECA09C1D9AC71100D692DD /* Products */,
+				4EA689A72BB8D72DEC374F46 /* Pods */,
+				25488F816A1135848F9D3CA7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6ECA0C31D9AC71100D692DD /* Build configuration list for PBXNativeTarget "code2040" */;
 			buildPhases = (
+				6DE213D062442E5A3F44CCB1 /* [CP] Check Pods Manifest.lock */,
 				A6ECA0971D9AC71100D692DD /* Sources */,
 				A6ECA0981D9AC71100D692DD /* Frameworks */,
 				A6ECA0991D9AC71100D692DD /* Resources */,
+				B469A418CC5A0355B1775706 /* [CP] Embed Pods Frameworks */,
+				43AB5622D942FE94A67CA150 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +283,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		43AB5622D942FE94A67CA150 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-code2040/Pods-code2040-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DE213D062442E5A3F44CCB1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B469A418CC5A0355B1775706 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-code2040/Pods-code2040-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A6ECA0971D9AC71100D692DD /* Sources */ = {
@@ -413,10 +488,12 @@
 		};
 		A6ECA0C41D9AC71100D692DD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49B664F209ED1FBF93F17183 /* Pods-code2040.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JC2MFJ36MH;
 				INFOPLIST_FILE = code2040/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pruicode.code2040;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -426,10 +503,12 @@
 		};
 		A6ECA0C51D9AC71100D692DD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7C9C1DBE83455DE11A79FE0 /* Pods-code2040.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JC2MFJ36MH;
 				INFOPLIST_FILE = code2040/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pruicode.code2040;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -514,6 +593,7 @@
 				A6ECA0C51D9AC71100D692DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A6ECA0C61D9AC71100D692DD /* Build configuration list for PBXNativeTarget "code2040Tests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +602,7 @@
 				A6ECA0C81D9AC71100D692DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A6ECA0C91D9AC71100D692DD /* Build configuration list for PBXNativeTarget "code2040UITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +611,7 @@
 				A6ECA0CB1D9AC71100D692DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
